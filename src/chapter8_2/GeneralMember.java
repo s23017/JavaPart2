@@ -5,7 +5,7 @@ public class GeneralMember {
     private  String name;
     private Lesson lesson;
 
-    public GeneralMember(long id, String name) {
+    public GeneralMember(long id, String name, Lesson lesson) {
         this.id = id;
         this.name = name;
         this.lesson = lesson;
@@ -19,15 +19,35 @@ public class GeneralMember {
         return id;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public void setId(long id) {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Lesson getLesson() {
+        return lesson;
+    }
+
+    public void setLesson(Lesson lesson) {
+        this.lesson = lesson;
+    }
+
+    public int fee() {
+        return lesson.fee();
+    }
+
+    public String getLessonId() {
+        return lesson.getLessonId();
+    }
+
+    public String getLessonName() {
+        return lesson.getLessonName();
     }
 }
