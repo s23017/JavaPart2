@@ -34,7 +34,20 @@ public class Main {
 
         }
 
-        Window window = new Window();
-        window.area(4,3);
+        Window w = new Window();
+//        window.wind(4,3);
+        w.setHeight(10);
+        System.out.println(w.getHeight());
+        w.setWidth(100);
+        System.out.println(w.getWidth());
+
+//        Student s1 = new Student("Mike", 3);
+//        System.out.println(s1.getName());
+//        System.out.println(s1.getGrade());
+
     }
+
+    Book b1 = new Book("Java入門","Mike",3000);
+//    b1.setTitle("Java応用");
+//    System.out.println(b1.getTitle());
 }

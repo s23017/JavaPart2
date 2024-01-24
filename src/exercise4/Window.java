@@ -1,12 +1,20 @@
 package exercise4;
 
 public class Window {
-    int height = 2;
-    int width = 3;
-    public void area(int newheight, int newwidth) {
-        this.height = newheight;
-        this.width = newwidth;
-        System.out.println(newheight);
-        System.out.println(newwidth);
+    private int height = 2;
+    private int width = 3;
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getHeight(){
+        return this.height;
+    }
+
+    public int getWidth(){
+        return width;
+    }
+
+    public void setWidth(int i) {
     }
 }
